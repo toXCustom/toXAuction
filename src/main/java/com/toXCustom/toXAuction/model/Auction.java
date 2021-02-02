@@ -4,10 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Getter
@@ -22,7 +20,7 @@ public class Auction {
     private long buyNow;
     private boolean promo;
     private String localization;
-    private Date auctionPutUp;
-    private Date auctionPutDown;
+    private Timestamp auctionPutUp;
+    private Timestamp auctionPutDown;
     private long visited;
 }
